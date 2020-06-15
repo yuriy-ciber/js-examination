@@ -2,6 +2,7 @@
   height: 525px;
   background-image: url(../images/footer-bg.jpg);
   @include bg-image;
+  position: relative;
   &__content {
     max-width: 870px;
     margin: 0 auto;
@@ -48,5 +49,10 @@
       background-color: $white;
       margin: 0 20px;
     }
+  }
+  &__form {
+    position: absolute;
+    left: 380px;
+    top: -100px;
   }
 }

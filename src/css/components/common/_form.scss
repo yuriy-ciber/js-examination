@@ -1,0 +1,45 @@
+.form {
+  width: 770px;
+  height: 450px;
+  background-color: $white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  padding: 60px 60px 70px 60px;
+
+  &__head {
+    @include flex-center;
+  }
+  &__content {
+    width: 100%;
+    @include flex-row;
+  }
+  &__info-list {
+    flex: 0 0 50%;
+  }
+
+  &__line {
+    height: 1px;
+    width: 100px;
+    background-color: $dark;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @include title;
+    margin-bottom: 50px;
+  }
+  &__info-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  &__svg {
+    @include svg(15px, $blue);
+    margin-right: 10px;
+  }
+  &__text {
+    color: $dark;
+    font-size: $H100;
+    font-family: $secondary-font;
+    font-weight: 600;
+  }
+  &__inputs {
+    @include flex-center;
+  }
+}

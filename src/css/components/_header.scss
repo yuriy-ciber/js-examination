@@ -4,6 +4,11 @@
   top: 0;
   left: 0;
   z-index: 50;
+  transition: all 0.5s ease 0s;
+
+  &__activ {
+    background-color: rgba(#1f83ca, 0.7);
+  }
 
   &::before {
     content: "";

@@ -5,7 +5,7 @@ const config = {
   focusAt: 1,
   gap: 30,
   // autoplay: 3000,
-  animationDuration: 4000,
+  animationDuration: 1000,
   hoverpause: true,
   breakpoints: {
     1024: {

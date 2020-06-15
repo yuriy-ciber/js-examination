@@ -1,5 +1,5 @@
 .button {
-  // background-color: $white;
+  background-color: $white;
   font-family: $secondary-font;
   font-size: $H50;
   font-weight: 400;
@@ -8,7 +8,7 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
   text-align: center;
-  border: 2px sold $dark;
+  border: 1px sold $dark;
   width: 100%;
   padding: 20px 40px;
   outline: solid;
@@ -18,7 +18,7 @@
 
   @media screen and (min-width: $screen-desktop) {
     width: fit-content;
-    border: 2px sold $dark;
+    border: 1px sold $dark;
   }
   &:hover {
     border-color: red;

@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //   console.log(event);
   };
-  $burger.onclick = addActive;
 
   const removeActive = () => {
     $burger.classList.remove("header__burger--active");
@@ -25,5 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
     $menu.classList.remove("header__menu--active");
     console.log(event);
   };
+
+  $burger.onclick = addActive;
   $list.onclick = removeActive;
 });
+
+const headerBackGround = () => {
+  const header = document.querySelector(".header");
+  window.onscroll = () => {
+    if (window.pageYOffset > 550) {
+      header.classList.add("header__activ");
+    } else if (window.pageYOffset < 550) {
+      header.classList.remove("header__activ");
+    }
+  };
+};
+
+headerBackGround();
