@@ -1,0 +1,119 @@
+.what {
+  padding-top: 100px;
+  @media (min-width: 1024px) {
+  }
+
+  &__head {
+    @include flex-center;
+  }
+  &__row {
+    @include flex-center;
+  }
+  &__row-top,
+  &__row-bottom {
+    @include flex-center;
+    margin-bottom: 100px;
+
+    @media (min-width: 1024px) {
+      @include flex-row;
+      margin-bottom: 210px;
+    }
+  }
+
+  &__row-img {
+    position: relative;
+    margin-bottom: 30px;
+    @include flex-row;
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 558px;
+    height: 470px;
+    top: -70px;
+    left: -180px;
+    z-index: -1;
+  }
+  &__what__row-img--right {
+    position: relative;
+  }
+  &__bg--right {
+    position: absolute;
+    width: 558px;
+    height: 470px;
+    top: -70px;
+    left: 180px;
+  }
+  &__row-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 69px;
+  }
+  &__row-text--bottom {
+    padding-right: 69px;
+    margin-bottom: 100px;
+    @media (min-width: 1024px) {
+      padding-right: 69px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__wrap {
+    width: 630px;
+    height: 470px;
+  }
+  &__image {
+    object-fit: cover;
+  }
+
+  &__line {
+    height: 2px;
+    width: 100px;
+    background-color: $dark;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: $H400;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__title--card {
+    text-align: start;
+    margin-bottom: 39px;
+  }
+  &__text {
+    width: 460px;
+    color: $grey;
+    font-family: $third-font;
+    font-size: $H200;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 36px;
+  }
+  &__button {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 60px;
+  }
+  &__location {
+    @include flex-row(flex-start);
+  }
+  &__location-text {
+    color: $dark-light;
+    font-family: $third-font;
+    font-size: $H200;
+    line-height: 30px;
+    font-weight: 100;
+    font-style: italic;
+  }
+}

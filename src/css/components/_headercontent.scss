@@ -1,0 +1,127 @@
+.headercontent {
+  height: 100vh;
+  width: 100%;
+  padding-top: 370px;
+  // padding-bottom: 30px;
+  background-image: linear-gradient(
+      to top,
+      rgba(96, 94, 221, 0.9),
+      rgba(96, 94, 221, 0.5)
+    ),
+    url(../images/header-bg.jpg);
+  @include bg-image($position: 60% 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $screen-desktop) {
+    height: 100vh;
+    padding-top: 370px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(
+        to top,
+        rgba(96, 94, 221, 0.9),
+        rgba(96, 94, 221, 0.5)
+      ),
+      url(../images/header_bg.png);
+    @include bg-image($position: 100% 5%);
+  }
+
+  &__box {
+    @include flex-row;
+    position: relative;
+  }
+  &__list {
+    position: absolute;
+    @include flex-row;
+    top: 250px;
+    right: 228px;
+
+    @media (min-width: $screen-desktop) {
+      @include flex-center;
+      position: absolute;
+      top: -60px;
+      right: 40px;
+    }
+  }
+  &__text {
+    @include flex-center;
+    color: $white;
+  }
+  &__title {
+    font-family: $base-font;
+    font-size: $H800;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 39px;
+    @media (min-width: $screen-tablet) {
+      font-size: $H800;
+    }
+    @media (min-width: $screen-desktop) {
+      font-size: $H900;
+    }
+  }
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: $H200;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    margin-bottom: 250px;
+
+    @media (min-width: $screen-desktop) {
+      margin-bottom: 165px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+
+    @media (min-width: $screen-desktop) {
+      margin-bottom: 40px;
+      margin-right: 0px;
+    }
+  }
+  &__circle {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width: $screen-desktop) {
+      height: 9px;
+      width: 9px;
+      &:hover {
+        background-color: $white;
+      }
+    }
+    &:hover {
+      background-color: $white;
+    }
+  }
+  &__link {
+    display: block;
+    text-align: center;
+  }
+  &__icon {
+    @include svg($size: 8px);
+    padding: 8px;
+    border: 1px solid $white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.5s ease 0s;
+
+    @media (min-width: $screen-desktop) {
+      &:hover {
+        background-color: rgb(170, 170, 240);
+        transform: translateY(10px);
+      }
+    }
+  }
+}

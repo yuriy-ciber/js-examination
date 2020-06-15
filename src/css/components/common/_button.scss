@@ -1,16 +1,26 @@
-.button{
-    background-color: $blue;
-    font-family: $base-font;
-    font-size:$H10;
-    color:$white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    text-align: center;
-    border: none;
-    width: 100%;
+.button {
+  // background-color: $white;
+  font-family: $secondary-font;
+  font-size: $H50;
+  font-weight: 400;
+  line-height: 22px;
+  color: $dark;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-align: center;
+  border: 2px sold $dark;
+  width: 100%;
+  padding: 20px 40px;
+  outline: solid;
 
-        @media screen and (min-width: $screen-desktop) {
+  cursor: pointer;
+  display: block;
+
+  @media screen and (min-width: $screen-desktop) {
     width: fit-content;
+    border: 2px sold $dark;
+  }
+  &:hover {
+    border-color: red;
   }
 }

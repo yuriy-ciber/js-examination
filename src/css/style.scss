@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/GothamBook.eot");
+  src: local("GothamBook"), url("../fonts/GothamBook.woff") format("woff"),
+    url("../fonts/GothamBook.ttf") format("truetype");
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_10146">Text with this font applied</p> */
+.fontsforweb_fontid_10146 {
+  font-family: "GothamBook";
+}
+@font-face {
+  font-family: "gothambold1";
+  src: url("../fonts/gothambold1.eot");
+  src: local("gothambold1"), url("../fonts/gothambold1.woff") format("woff"),
+    url("../fonts/gothambold1.ttf") format("truetype");
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_5903">Text with this font applied</p> */
+.fontsforweb_fontid_5903 {
+  font-family: "gothambold1";
+}
+@font-face {
+  font-family: "Gotham Medium Regular";
+  src: url("../fonts/Gotham Medium Regular.eot");
+  src: local("☺"), url("../fonts/Gotham Medium Regular.woff") format("woff"),
+    url("../fonts/Gotham Medium Regular.ttf") format("truetype"),
+    url("../fonts/Gotham Medium Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 @import "./core/vars";
 @import "./core/common";
 @import "./core/inheritace";
@@ -5,6 +35,12 @@
 
 @import "./components/common/button";
 @import "./components/common/input";
+@import "./components/common/card";
 @import "./components/header";
-@import "./components/contact";
+@import "./components/headercontent";
+@import "./components/what";
+@import "./components/gallery";
+@import "./components/news";
+@import "./components/glide";
+@import "./components/map";
 @import "./components/footer";

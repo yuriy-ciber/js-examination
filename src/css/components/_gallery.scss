@@ -1,0 +1,92 @@
+.gallery {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &__head {
+    @include flex-center;
+  }
+  &__title {
+    @include title;
+    margin-bottom: 100px;
+  }
+  &__line {
+    height: 2px;
+    width: 100px;
+    background-color: $dark;
+    margin-bottom: 40px;
+  }
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 1024px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  &__row {
+    @include flex-center;
+    margin-bottom: 20px;
+    @media (min-width: 1024px) {
+      @include flex-row;
+      margin-bottom: 60px;
+    }
+  }
+  &__column-1 {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    @media (min-width: 1024px) {
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  &__column-2 {
+    @include flex-row;
+    flex-wrap: wrap;
+    width: 580px;
+  }
+  &__row-top,
+  &__row-bottom {
+    display: flex;
+  }
+  &__row-top {
+    margin-bottom: 10px;
+  }
+
+  &__column-small:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__wrap {
+    width: 580px;
+
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      width: 580px;
+      height: 438px;
+    }
+  }
+  &__wrap-small {
+    width: 285px;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      width: 285px;
+      height: 214px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    transition: all 0.7s ease 0s;
+  }
+
+  &__image:hover {
+    transform: scale(1.2);
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
